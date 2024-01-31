@@ -7721,12 +7721,13 @@ a.anchor-link {
 <span class="n">kick_dir</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Which direction does Team A's striker kick the ball? "</span><span class="p">))</span>
 <span class="n">save_dir</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Which direction does Team B's keeper block? "</span><span class="p">))</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">kick_dir</span> <span class="ow">in</span> <span class="n">directions</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">save_dir</span> <span class="ow">in</span> <span class="n">directions</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">kick_dir</span> <span class="o">==</span> <span class="n">save_dir</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">kick_dir</span> <span class="o">==</span> <span class="s2">"left"</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">save_dir</span> <span class="o">==</span> <span class="s2">"right"</span><span class="p">))</span> <span class="ow">or</span> <span class="p">((</span><span class="n">kick_dir</span> <span class="o">==</span> <span class="s2">"right"</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">save_dir</span> <span class="o">==</span> <span class="s2">"left"</span><span class="p">))</span> <span class="ow">or</span> <span class="p">((</span><span class="n">kick_dir</span> <span class="o">==</span> <span class="s2">"center"</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="s2">"save_dir"</span> <span class="o">==</span> <span class="s2">"center"</span><span class="p">)):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Penalty saved, Team B wins"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Penalty scored, Team A wins"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Error: Invalid direction"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid direction"</span><span class="p">)</span>
+        
 </pre></div>
 </div>
 </div>
