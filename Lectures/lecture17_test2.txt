@@ -1,0 +1,2 @@
+This is lecture 17.
+We are learning to read and write files.

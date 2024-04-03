@@ -1,0 +1,5 @@
+Jin        85.0
+Cameron    88.0
+Ricardo    96.3
+Mary       43.3
+Kiri       81.7
